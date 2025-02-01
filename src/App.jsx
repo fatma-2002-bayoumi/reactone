@@ -1,4 +1,4 @@
-import {  createHashRouter, RouterProvider } from "react-router-dom"
+import {  createBrowserRouter, RouterProvider } from "react-router-dom"
 import"../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
 import './App.css'
 import Home from "./components/home/Home"
@@ -11,7 +11,7 @@ Notfound
 
 
 function App() {
-const routes = createHashRouter([
+const routes = createBrowserRouter([
   {path:"",element:<Layout/>,children:[
     {index:true,element:<Home/>},
     {path:"home",element:<Home/>},
